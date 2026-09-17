@@ -1,5 +1,8 @@
 # Moderator
 
+Snapshot builds use LandoriaModActions@v4.3 and the shared private references.
+Requires MOD_REFERENCES_TOKEN. Runs on main only when both versions match X.Y.Z-snapshot.
+
 Gives trusted Valheim moderators server-authorized tools for helping players and managing the world.
 
 ## Valheim compatibility
