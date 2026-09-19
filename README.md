@@ -1,12 +1,6 @@
 # Moderator
 
-Requires MOD_REFERENCES_TOKEN. All five versions must match; only manifest and informational version use -snapshot.
-
 Gives trusted Valheim moderators server-authorized tools for helping players and managing the world.
-
-## Valheim compatibility
-
-Current release: 1.0.x
 
 ## Features
 
