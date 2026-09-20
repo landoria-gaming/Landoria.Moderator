@@ -24,29 +24,12 @@ namespace Landoria.Moderator
 
         private Harmony _harmony;
 
-        private void RegisterPatches()
-        {
-            _harmony.CreateClassProcessor(typeof(CommandRegistrationPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(ConsoleEventCommandConstructorPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(FailableCommandConstructorPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(HideDevCommandsPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(BlockDevCommandsPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(ShowPlayersToModeratorOnMapPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(LocalModeratorStatePatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(AdminRpcRegistrationPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(PlayerPositionRpcRegistrationPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(ModeratorHoverNamePatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(ModeratorCommandValidationPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(ModeratorDisconnectPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(MapTeleportPatch)).Patch();
-        }
-
         private void Awake()
         {
             ModLogger = Logger;
             Logger.LogInfo($"AssemblyVersion: {GetType().Assembly.GetName().Version}.");
             _harmony = new Harmony(PluginGuid);
-            RegisterPatches();
+            _harmony.PatchAll();
             RegisterCommands();
             ModLogger.LogInfo($"{PluginName} {PluginVersion} is loaded.");
         }
