@@ -15,7 +15,7 @@ Gives trusted Valheim moderators server-authorized tools for helping players and
 ## Video demo
 
 <p align="left">
-  <a href="https://youtu.be/GxZJFHgpYNY"><img src="https://raw.githubusercontent.com/landoria-gaming/Landoria.Moderator/main/assets/moderator.jpg" alt="Moderator video demo" width="300"></a>
+  <a href="https://youtu.be/GxZJFHgpYNY"><img src="https://raw.githubusercontent.com/landoria-gaming/Landoria.Moderator/main/assets/moderator.png" alt="Moderator video demo" width="300"></a>
 </p>
 
 ## Commands
