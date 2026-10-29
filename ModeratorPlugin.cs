@@ -19,7 +19,7 @@ namespace Landoria.Moderator
         internal static ManualLogSource ModLogger { get; private set; }
         private const string PluginGuid = "Landoria.Moderator";
         private const string PluginName = "Landoria.Moderator";
-        private const string PluginVersion = "1.0.11";
+        private const string PluginVersion = "1.0.12";
 
 
         private Harmony _harmony;
